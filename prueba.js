@@ -18,4 +18,15 @@ var langs = ["PHP", "Javascript", "Python"];
 var dios = 100;
 dios = "hola";
 etiqueta.innerHTML = dios + " - " + edad;
-alert('hello world');
+//diferencia entre let y var
+var a = 7;
+var b = 12;
+if (a == 7) {
+    // let solo tendra el valor de 4 dentro de este bloque
+    var a_1 = 4;
+    var b = 1;
+    console.log("dentro del if:" + a_1 + " - " + b);
+    // a = 4 b = 1
+}
+console.log("fuera del if:" + a + " - " + b);
+// a = 7 b = 1

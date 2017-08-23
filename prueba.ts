@@ -23,5 +23,20 @@ dios = "hola";
 
 etiqueta.innerHTML = dios + " - " + edad;
 
+//diferencia entre let y var
 
-alert('hello world');
+var a = 7;
+var b = 12;
+
+if(a == 7){
+    // let solo tendra el valor de 4 dentro de este bloque
+    let a = 4;
+    var b = 1;
+
+    console.log("dentro del if:" + a + " - " + b);
+    // a = 4 b = 1
+}
+
+console.log("fuera del if:" + a + " - " + b);
+// a = 7 b = 1
+
