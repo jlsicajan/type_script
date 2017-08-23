@@ -9,4 +9,13 @@ var resultado = helloWorld(nombre);
 //si se carga el fichero js en el head
 var etiqueta = document.getElementById('container');
 etiqueta.innerHTML = resultado;
+//en typescript se pueden definir tipos de variables
+var nombre = "Jose Sicajan";
+var edad = 19;
+var programador = true;
+var langs = ["PHP", "Javascript", "Python"];
+//con el tipo any nos permite meterle cualquier dato a una variable
+var dios = 100;
+dios = "hola";
+etiqueta.innerHTML = dios + " - " + edad;
 alert('hello world');
