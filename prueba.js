@@ -30,3 +30,24 @@ if (a == 7) {
 }
 console.log("fuera del if:" + a + " - " + b);
 // a = 7 b = 1
+//funciones y tipado
+function devuelve_numero(num) {
+    //(num:number):string -> esto obliga a la funcion a devolver siempre un string, y recibir una variable tipo number
+    // return num; -> error
+    return "Numero enviado a la variable: " + num;
+}
+function devuelve_string(texto) {
+    if (texto == "hola") {
+        var num = true;
+    }
+    else {
+        var num = false;
+    }
+    return num;
+}
+function devuelve_cualquiertipo(texto) {
+    return texto;
+}
+alert(devuelve_numero(32));
+alert(devuelve_string("hola"));
+alert(devuelve_cualquiertipo("hello!"));
